@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="description" content="Página de práctica para 
+    interactuar con formularios en HTML">
+    <title>Práctica 18</title>
+    <link rel="shortcut icon" href="images/pokemon-egg.ico" type="image/x-icon">
+    <link rel="stylesheet" href="18-style.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="username" id="name">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="usermail" id="mail">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea name="usermsg" id="msg" cols="30" rows="10"></textarea>
+                </li>
+                <li class="button">
+                   <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Tamaño del zumo de fruta</legend>
+                <p>
+                    <input type="radio" name="size" id="size_1" value="small">
+                    <label for="size_1">Pequeño</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_2">
+                    <label for="size_2">Mediano</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_3">
+                    <label for="size_3">Grande</label>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

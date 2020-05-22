@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autho" content="Kary Ruiz">
+    <meta name="description" content="Página de práctica
+    que muestra los tipos de controles en HTML">
+    <title>Práctica 15</title>
+    <link rel="shortcut icon" href="images/pokemon-egg.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>TIPOS DE CONTROLES</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <p>
+                <label for="entrada">Campo de entrada de texto readonly:</label>
+                <input type="text" name="entrada-1" id="entrada" readonly value="Hi c:">
+            </p>
+            <p>
+                <label for="entrada">Campo de entrada de texto placeholder:</label>
+                <input type="text" name="entrada-2" id="entrada" placeholder="Hi :3">
+            </p>
+            <p>
+                <label for="entrada">Campo de entrada de texto con corrreción:</label>
+                <input type="text" name="entrada-3" id="entrada" spellcheck="true">
+            </p>
+            <p>
+                <label for="pwd">Campo de entrada para contraseña:</label>
+                <input type="password" name="pwd" id="pwd" required>
+            </p>
+            <p>
+                <label for="buscar">Campo de entrada para búsqueda:</label>
+                <input type="search" name="entrada-4" id="buscar" autofocus>
+            </p>
+            <p>
+                <label for="edad">Campo de entrada para números:</label>
+                <input type="number" name="entrada-5" id="edad" min="2" max="10" step="2">
+            </p>
+            <p>
+                <label for="price">Escoge un precio máximo: </label>
+                <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+                <output class="price-output" for="price"></output>
+            </p>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+
+            <p>Escoge una fruta</p>
+            <select id="simple" name="simple">
+                <option>Plátano</option>
+                <option selected>Cereza</option>
+                <option>Limón</option>
+            </select>
+            <p>
+                <label for="myFruit">¿Cuál es tu fruta favorita?</label>
+                <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+                <datalist id="mySuggestion">
+                    <option>Manzana</option>
+                    <option>Plátano</option>
+                    <option>Fresa</option>
+                    <option>Mora Azul</option>
+                    <option>Lemón</option>
+                    <option>Mango</option>
+                    <option>Durazno</option>
+                    <option>Piña</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="progreso">Tu progreso:</label>
+                <progress id="progreso" max="100" value="75">75/100</progress>
+            </p>
+
+            <fieldset>
+                <legend>Campos de verificación:</legend>
+
+                <p>¿Cuál es tu genero?</p>
+                <ul>
+                    <li>
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" name="genero" id="mujer" value="mujer">M
+                    </li>
+                    <li>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="genero" id="hombre" value="hombre">H
+                    </li>
+                </ul>
+                <p>¿Cuál es tu color favorito?</p>
+                <ul>
+                    <li>
+                        <label for="rojo">Rojo</label>
+                        <input type="checkbox" name="color" id="rojo" value="rojo" checked>
+                    </li>
+                    <li>
+                        <label for="amarillo">Amarillo</label>
+                        <input type="checkbox" name="color" id="amarillo" value="amarillo">
+                    </li>
+                    <li>
+                        <label for="azul">Azul</label>
+                        <input type="checkbox" name="color" id="azul" value="azul">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Envíar</button>
+            <button type="reset">Reinicio</button>
+            <button type="button" disabled>Deshabilitado</button>
+        </form>
+    </main>
+</body>
+</html>
